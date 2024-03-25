@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/css/font-awesome.min.css">
+    <!-- <link href="script.js" type="text/javascript"> -->
+
+</head>
+<body>
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img class="halitech" src="images/log.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i id="close" class="fa fa-close" onclick="hidemenu()"></i>
+                <ul class="link">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i id="menu" class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Leave us a comment,</h1>
+            <br>
+            <h2>If you wish to make an enquiry, indicate <span>BELOW</span></h2>
+            
+        </div>
+    </section>
+    <div class="contact">
+        <form>
+            <input type="text" id="name" placeholder="What is your name">
+            <br><br>
+            <input type="text" id="email" placeholder="What is your email">
+            <br><br>
+            <textarea id="text" placeholder="What is your enquiry"></textarea>
+            <br><br>
+            <button class="button" id="button">Submit</button>
+        </form>
+    </div>
+
+    <section class="footer">
+        <h2>Our social links</h2> 
+        <div class="social-links">
+            <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="youtube.com"><i class="fa fa-youtube"></i></a>
+            <a href="mailto:yusufhalimu@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="www.linkedIn.com"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="copy">
+            &copy;HALITECH FOUNDATION 2022
+        </div>
+
+    </section>
+    <script>
+        var navlinks = document.getElementById('navlinks');
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+           navlinks.style.right = "-200px";
+        }
+
+
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let text = document.getElementById("text");
+        let button = document.getElementById("button");
+        button.addEventListener("click", () =>{
+            
+            let message = name.value;
+            if(name != '' && email != '' && text !=''){
+                alert('Thanks ' + message + ' you have successfully contacted us and will be responded to in due time');
+            }
+            else{
+                return alert("Please fill all areas");  
+            }
+            
+            
+        })
+    </script>
+</body>
+</html>

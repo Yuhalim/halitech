@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">]
+        <nav>
+            <a href="index.html"><img  class="halitech" src="images/log.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i id="close" class="fa fa-close" onclick="hidemenu()"></i>
+                <ul class="link">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i id="menu" class="fa fa-bars" onclick="showmenu()"></i>  
+        </nav>
+        <div class="regg">
+            <form>
+                <input type="text" id="name" placeholder="What is your name" required>
+                <br><br>
+                <input type="text" id="email" placeholder="What is your email" required>
+                <br><br>
+                <input type="text" id="course" placeholder="What is course would you like to offer?" required>
+                <br><br>                
+                <input type="text" id="level" placeholder="What is your level, Beginner?, Intermediate?, or Advanced?" required>
+                <br><br>
+                <button class="button" id="button">Submit</button>
+
+            </form>
+        </div>
+    </section>
+    <script  src="script.js">
+        
+
+    </script>
+</body>
+</html>

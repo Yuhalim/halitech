@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/css/font-awesome.min.css">
+    <link href="script.js" type="text/javascript">
+</head>
+    <body>
+        
+        <section class="gal-header">
+            <nav>
+                <a href="index.html"><img  class="halitech" src="images/log.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i id="close" class="fa fa-close" onclick="hidemenu()"></i>
+                    <ul class="link">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="courses.html">COURSES</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i id="menu" class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Nation's biggest Organization</h1>
+                <br><br>
+                <h2>Get to see our campuses</h2>
+            </div>
+        </section>
+        <!-- <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="images/images1.jpg">
+                <img src="images/images2.jpg">
+                <img src="images/images3.jpg">
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div> -->
+        </section>
+
+        <div class="home">
+            <div class="slide-cont">
+                <img class="slide-cont active" src="images/images1.jpg">
+                <img class="slide-cont" src="images/images2.jpg">
+                <img class="slide-cont" src="images/images3.jpg">
+                <img class="slide-cont" src="images/images4.jpg">
+                <img class="slide-cont" src="images/images5.jpg">
+                <img class="slide-cont" src="images/images6.jpg">
+                <img class="slide-cont" src="images/images7.jpg">
+                <img class="slide-cont" src="images/images (11).jpg">
+                <img class="slide-cont" src="images/images9.jpg">
+                <img class="slide-cont" src="images/images10.jpg">
+                <img class="slide-cont" src="images/images11.jpg">
+                <img class="slide-cont" src="images/images12.jpg">
+                <img class="slide-cont" src="images/images13.jpg">
+                <img class="slide-cont" src="images/images14.jpg">
+            </div>
+                <div id="prev" class="fa fa-chevron-left" onclick="prev()"></div>
+                <div id="next" class="fa fa-chevron-right" onclick="next()"></div>        
+        </div>
+        </div>
+        <section class="footer">
+            <h2>Our social links</h2> 
+            <div class="social-links">
+                <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="youtube.com"><i class="fa fa-youtube"></i></a>
+                <a href="mailto:yusufhalimu@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="www.linkedIn.com"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="copy">
+                &copy;HALITECH FOUNDATION 2022
+            </div>
+    
+        </section>
+        <script src="script.js">
+
+            // var img=document.getElementById('img');
+            // var slides = ["images/images1.jpg", "images/images2.jpg", "images/images3.jpg"];
+            // var start = 0;
+
+            // function slider(){
+            //     if(start<slides.length){
+            //         start=start+1;
+            //     }
+            //     else{
+            //         start=1;
+            //     }
+            //     console.log(img);
+            //     img.innerHTML = "<img src="+slides[start-1]+">";
+
+            // }
+            // setinterval(slider, 2000);
+        </script>
+</body>
+</html>
